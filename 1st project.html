@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>Knitting....my favorite hobby</title>
+    <style>
+      body {
+        background: #eeaeca;
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        );
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      .contact-button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid plum;
+        background: white;
+        font-size: 24px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .contact-button:hover {
+        background: plum;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        color: white;
+        font-size: 18px;
+      }
+
+      .theme-button {
+        font-size: 10px;
+        background: black;
+        color: white;
+        padding: 5 8px;
+      }
+
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+      .knitting-intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+        display: block;
+        margin: 0 auto;
+      }
+      .knitting-intro-picture:hover {
+        transform: scale(1.1);
+        filter: contrast(80%);
+      }
+
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(2);
+      }
+      .dark {
+        background: black;
+        color: white;
+      }
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .dark a {
+        color: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <h1>Knitting</h1>
+      <h2>My favorite hobby</h2>
+      <a href="https://en.wikipedia.org/wiki/knitting" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Oma_strickt_Str%C3%BCmpfe.jpg/330px-Oma_strickt_Str%C3%BCmpfe.jpg"
+          alt=""
+          class="knitting-intro-picture"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://lainepublishing.com/cdn/shop/articles/20250219_MU_AgnesKoch_031_ceeaab50-9972-4e3f-b293-42b5c27fbd50.jpg?v=1764060720&width=750"
+          alt=""
+        />
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/mohair-knit-ideas-67daa52aec02b.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*"
+          alt=""
+        />
+        <img
+          src="https://plus.unsplash.com/premium_photo-1763241044875-4436713e04d4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <img
+          src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x2000+0+0/resize/800/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F9a%2F44%2F21c9e6da48adb5320a4d68b71946%2F20240723-weavinggrief-mengwencao-066.jpg"
+          alt=""
+        />
+      </div>
+      <p>
+        Knitting is the process of interlooping yarn to create textile fabric
+        made of interconnected loops, done by hand, machine or both. Knitting
+        creates stitches: loops of yarn in a row; the loops are created with a
+        pair of knitting needles, which can either be straight and cylindrical
+        or in the round with plastic tubes or wire (cables) joining the ends of
+        both.
+        <br /><br />
+        🧶
+        <a href="https://en.wikipedia.org/wiki/knitting" target="_blank">
+          <strong> Read on Wikipedia</strong>
+        </a>
+      </p>
+      <button class="contact-button">Learn Knitting</button>
+    </div>
+    <footer>
+      Coded with ❤️ by
+      <a href="https://www.shecodes.io/" target="_blank"> Precious Ndhambi</a>
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      function contact() {
+        let passion = prompt("Are you passionate about knitting?");
+
+        if (passion === "Yes" || "yes") {
+          let name = prompt("Great! What is your name?");
+
+          let contact = prompt("Please enter your email");
+          alert(
+            "Thank you " +
+              name +
+              " .We will contact you soon at " +
+              contact +
+              "🧶",
+          );
+        } else {
+          alert("No worries! Have a lovely day😄");
+        }
+      }
+
+      let contactButton = document.querySelector(".contact-button");
+      contactButton.addEventListener("click", contact);
+    </script>
+  </body>
+</html>
