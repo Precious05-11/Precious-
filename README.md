@@ -47,9 +47,7 @@ How It Works
 Known  Issue
 - The "Yes" condition in JavaScript always evaluates to true due to incorrect logic
   if(passion === "Yes || "yes")<img width="1366" height="768" alt="Screenshot (514)" src="https://github.com/user-attachments/assets/d3dcfbc9-821d-45b8-a5f0-6701e72b3ba1" />
-<img width="1366" height="768" alt="Screenshot (513)" src="https://github.com/user-attachments/assets/ed0a57f2-d65a-4815-9475-601c8ec7782f" />
-<img width="1366" height="768" alt="Screenshot (512)" src="https://github.com/user-attachments/assets/5d13ef08-1b6b-41bd-88ee-80331d08cabc" />
-      
+  
 <img width="1366" height="768" alt="Screenshot (512)" src="https://github.com/user-attachments/assets/265d2f45-ce12-47b0-8191-aaf3bf15c59d" />
 <img width="1366" height="768" alt="Screenshot (513)" src="https://github.com/user-attachments/assets/5959118b-8143-4bd7-91a0-49b1391b284d" />
 <img width="1366" height="768" alt="Screenshot (514)" src="https://github.com/user-attachments/assets/f9fac3d2-5fd0-447c-a786-bb9f4c74015f" />
